@@ -6,8 +6,7 @@ while i <= 5000:
     ret, frame = cap.read()
     cv.imshow('frame', frame)
     if (i % 50 == 0):
-        #cv.imwrite(f'C:/Users/Mann/demos/asl/train/Z_train/Z_{int(i / 50)}.png', frame)
-        cv.imwrite(f'C:/Users/Mann/demos/asl/asl_alphabet_test/asl_alphabet_test/test.png', frame)
+        cv.imwrite(f'C:/Users/Mann/demos/asl/train/Z_train/Z_{int(i / 50)}.png', frame)
     if cv.waitKey(1) == ord('a'):
         break
 
